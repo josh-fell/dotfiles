@@ -1,6 +1,11 @@
 autoload -Uz compinit
 compinit -i
 
+# TODO: Delete this function once https://github.com/microsoft/vscode/issues/204085 is fixed
+function code() {
+    /usr/local/bin/code "$@" 2> >( fgrep -v 'SecCodeCheckValidity: Error Domain=NSOSStatusErrorDomain' >&2 )
+}
+
 ## WezTerm
 # Sets the title of a terminal to the last directory of the current working directory.
 function set_tab_title(){
@@ -42,9 +47,6 @@ eval "$(uv --generate-shell-completion zsh)"
 alias j="just"
 
 ## Astro
-autoload -U compinit
-compinit -i
-
 alias adi="astro dev init"
 alias ads="astro dev start --wait 5m"
 alias ads!="astro dev stop"
