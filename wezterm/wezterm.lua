@@ -49,16 +49,6 @@ config.keys = {
 	{ key = "j", mods = "CMD", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "CMD", action = act.ActivatePaneDirection("Up") },
 	{ key = "l", mods = "CMD", action = act.ActivatePaneDirection("Right") },
-	-- {
-	-- 	key = "n",
-	-- 	mods = "CTRL",
-	-- 	action = act.SwitchWorkspaceRelative(1),
-	-- },
-	-- {
-	-- 	key = "p",
-	-- 	mods = "CTRL",
-	-- 	action = act.SwitchWorkspaceRelative(-1),
-	-- },
 }
 
 -- Initial startup creates a window pinned to the right side of screen.
