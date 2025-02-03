@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit -i
+
 ## WezTerm
 # Sets the title of a terminal to the last directory of the current working directory.
 function set_tab_title(){
@@ -31,6 +34,9 @@ setopt hist_verify
 
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+
+## uv
+eval "$(uv --generate-shell-completion zsh)"
 
 ## Just
 alias j="just"
