@@ -41,7 +41,10 @@ bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 ## uv
-eval "$(uv --generate-shell-completion zsh)"
+eval "$(uv generate-shell-completion zsh)"
+
+## ruff
+eval "$(ruff generate-shell-completion zsh)"
 
 ## Just
 alias j="just"
