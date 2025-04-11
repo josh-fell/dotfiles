@@ -66,6 +66,8 @@ alias awl="astro workspace list"
 alias aws="astro workspace switch"
 alias adl="astro deployment list"
 
+alias adup="astro dev upgrade-test $@"
+
 ## Git
 alias g="git"
 alias gcb="g checkout -b"
