@@ -49,6 +49,19 @@ config.keys = {
 	{ key = "j", mods = "CMD", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "CMD", action = act.ActivatePaneDirection("Up") },
 	{ key = "l", mods = "CMD", action = act.ActivatePaneDirection("Right") },
+
+	-- Rebind OPT-Left, OPT-Right as ALT-b, ALT-f respectively to match Terminal.app
+   -- behavior
+	{
+		key = "LeftArrow",
+		mods = "OPT",
+		action = act.SendKey({ key = "b", mods = "ALT" }),
+	},
+	{
+		key = "RightArrow",
+		mods = "OPT",
+		action = act.SendKey({ key = "f", mods = "ALT" }),
+	},
 }
 
 -- Initial startup creates a window pinned to the right side of screen.
