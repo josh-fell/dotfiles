@@ -64,8 +64,8 @@ alias adt="astro dev pytest"
 alias adr="astro dev run $@"
 alias adb="astro dev bash"
 
-alias awl="astro workspace list"
-alias aws="astro workspace switch"
+alias awkl="astro workspace list"
+alias awks="astro workspace switch"
 alias adl="astro deployment list"
 
 alias adup="astro dev upgrade-test $@"
