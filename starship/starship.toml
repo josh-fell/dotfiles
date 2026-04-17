@@ -10,42 +10,47 @@ $cmd_duration\
 $line_break\
 $character"""
 
-palette = "dracula"
+palette = "catppuccin_mocha"
 
-[palettes.dracula]
-background = "#282a36"
-current_line = "#44475a"
-foreground = "#f8f8f2"
-comment = "#6272a4"
-cyan = "#8be9fd"
-green = "#50fa7b"
-orange = "#ffb86c"
-pink = "#ff79c6"
-purple = "#bd93f9"
-red = "#ff5555"
-yellow = "#f1fa8c"
+[palettes.catppuccin_mocha]
+base = "#1e1e2e"
+surface0 = "#313244"
+surface1 = "#45475a"
+overlay1 = "#7f849c"
+text = "#cdd6f4"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+mauve = "#cba6f7"
+pink = "#f5c2e7"
+peach = "#fab387"
+teal = "#94e2d5"
+sky = "#89dceb"
+lavender = "#b4befe"
+rosewater = "#f5e0dc"
 
 [character]
-error_symbol = "[❯](bold #BD93F9)"
-success_symbol = "[❯](bold #BD93F9)"
+error_symbol = "[❯](bold mauve)"
+success_symbol = "[❯](bold mauve)"
 
 [fill]
 symbol = "  "
 
 [cmd_duration]
-style = "bold #f1fa8c"
+style = "bold yellow"
 
 [directory]
-style = "bold #50fa7b"
+style = "bold green"
 format = '[$path ]($style)'
 
 [package]
 format = "[$version]($style) "
-style = "cyan"
+style = "sky"
 
 [git_branch]
-style = "bold #ff79c6"
-symbol = " "
+style = "bold pink"
+format = "on [$branch(:$remote_branch)]($style) "
 
 [git_status]
 format = "([$all_status$ahead_behind]($style) )"
@@ -55,4 +60,3 @@ disabled = false
 
 [python]
 format = '[(\($virtualenv\) )]($style)'
-
