@@ -6,11 +6,6 @@ export PATH="$HOME/.local/bin:$PATH"
 ## fnm
 eval "$(fnm env --use-on-cd)"
 
-# TODO: Delete this function once https://github.com/microsoft/vscode/issues/204085 is fixed
-function code() {
-    /usr/local/bin/code "$@" 2> >( fgrep -v 'SecCodeCheckValidity: Error Domain=NSOSStatusErrorDomain' >&2 )
-}
-
 ## WezTerm
 # Sets the title of a terminal to the last directory of the current working directory.
 function set_tab_title(){
