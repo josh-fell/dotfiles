@@ -142,8 +142,7 @@ export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f
 alias ls="eza --color=always --git --icons=always --hyperlink --tree --level=1 --group-directories-first --ignore-glob=__pycache__"
 
 ## zoxide
-eval "$(zoxide init zsh)"
-alias cd="z"
+eval "$(zoxide init zsh --cmd cd)"
 
 ## lazy*
 alias lzg="lazygit"
