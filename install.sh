@@ -3,6 +3,8 @@ set -euo pipefail
 
 DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
+brew bundle --file="$DOTFILES/Brewfile"
+
 link() {
   local src="$DOTFILES/$1" dst="$2"
   mkdir -p "$(dirname "$dst")"
