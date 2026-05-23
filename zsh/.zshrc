@@ -149,3 +149,6 @@ eval "$(zoxide init zsh --cmd cd)"
 ## lazy*
 alias lzg="lazygit"
 alias lzd="lazydocker"
+
+## Local overrides
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
