@@ -7,6 +7,7 @@ brew bundle --file="$DOTFILES/Brewfile"
 
 uv tool install ruff
 uv tool install rust-just
+uv tool install prek
 
 link() {
   local src="$DOTFILES/$1" dst="$2"
