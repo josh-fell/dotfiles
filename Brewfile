@@ -1,3 +1,4 @@
+brew "astro"
 brew "bat"
 brew "eza"
 brew "fd"
