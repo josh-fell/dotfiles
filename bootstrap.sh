@@ -5,6 +5,8 @@ DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
 brew bundle --file="$DOTFILES/Brewfile"
 
+git config --global user.name "Josh Fell"
+
 uv tool install ruff
 uv tool install rust-just
 uv tool install prek
