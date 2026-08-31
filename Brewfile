@@ -1,3 +1,5 @@
+cask "font-fira-code-nerd-font"
+
 brew "astro"
 brew "bat"
 brew "eza"
