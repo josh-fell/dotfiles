@@ -13,7 +13,7 @@ if ! command -v brew >/dev/null 2>&1; then
   fi
 fi
 
-brew bundle --file="$DOTFILES/Brewfile"
+brew bundle --file="$DOTFILES/Brewfile" --verbose
 
 git config --global user.name "Josh Fell"
 
