@@ -17,6 +17,9 @@ brew bundle --file="$DOTFILES/Brewfile" --verbose
 
 git config --global user.name "Josh Fell"
 
+fnm install --lts
+fnm default lts-latest
+
 uv tool install ruff
 uv tool install rust-just
 uv tool install prek
