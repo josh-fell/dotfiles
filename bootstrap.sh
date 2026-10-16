@@ -15,6 +15,8 @@ fi
 
 brew bundle --file="$DOTFILES/Brewfile" --verbose
 
+gh extension install github/gh-stack
+
 git config --global user.name "Josh Fell"
 
 fnm install --lts
