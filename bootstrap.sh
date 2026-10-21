@@ -25,6 +25,7 @@ fnm default lts-latest
 uv tool install ruff
 uv tool install rust-just
 uv tool install prek
+uv tool upgrade --all
 
 link() {
   local src="$DOTFILES/$1" dst="$2"
